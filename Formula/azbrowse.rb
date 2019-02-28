@@ -2,9 +2,9 @@
 class Azbrowse < Formula
   desc "An interactive CLI for browsing Azure, inspired by http://resources.azure.com/"
   homepage "https://github.com/lawrencegripper/azbrowse"
-  url "https://github.com/lawrencegripper/azbrowse/releases/download/v1.1.63/azbrowse_darwin_amd64.tar.gz"
-  version "1.1.63"
-  sha256 "e1388f6eeb622e6cbbf4f9bb2b6948fea16a84a22ce656cc39b0d3d51e560695"
+  url "https://github.com/lawrencegripper/azbrowse/releases/download/v1.1.64/azbrowse_darwin_amd64.tar.gz"
+  version "1.1.64"
+  sha256 "a16f962c950012772004e121de4ae35c3fbc3612f3d8fc462d05f395eb77a3af"
 
   def install
     bin.install "azbrowse"
