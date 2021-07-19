@@ -5,20 +5,20 @@
 class Azbrowse < Formula
   desc "An interactive CLI for browsing Azure, inspired by http://resources.azure.com/"
   homepage "https://github.com/lawrencegripper/azbrowse"
-  version "2.1.490"
+  version "2.1.499"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lawrencegripper/azbrowse/releases/download/v2.1.490/azbrowse_darwin_amd64.tar.gz"
-      sha256 "22cfca9f2524421144afa33db307e8f985e4a15f2b613cd4a6c19cdde4b55128"
+      url "https://github.com/lawrencegripper/azbrowse/releases/download/v2.1.499/azbrowse_darwin_amd64.tar.gz"
+      sha256 "4fba958aacd8f8d91aea67587a216abae177293c8267fa5df276faae6d0112b5"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/lawrencegripper/azbrowse/releases/download/v2.1.490/azbrowse_linux_amd64.tar.gz"
-      sha256 "160963f7180fbb44b8c3250d21e6555b7db53186efedf1a5a1cf80f1600b7b6c"
+      url "https://github.com/lawrencegripper/azbrowse/releases/download/v2.1.499/azbrowse_linux_amd64.tar.gz"
+      sha256 "dffe7cbf81e1c76991605ddcf539a4402d1e7790ced9e9609e5045a09e60dca2"
     end
   end
 
