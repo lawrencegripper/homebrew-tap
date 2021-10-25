@@ -5,25 +5,28 @@
 class Azbrowse < Formula
   desc "An interactive CLI for browsing Azure, inspired by http://resources.azure.com/"
   homepage "https://github.com/lawrencegripper/azbrowse"
-  version "2.1.518"
-  bottle :unneeded
+  version "2.1.524"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lawrencegripper/azbrowse/releases/download/v2.1.518/azbrowse_darwin_amd64.tar.gz"
-      sha256 "0b229cb8d973e42a5ad9aea2f2b5ab0b9677e58759bb05ee70a1ff8ccb9afd3f"
+      url "https://github.com/lawrencegripper/azbrowse/releases/download/v2.1.524/azbrowse_darwin_amd64.tar.gz"
+      sha256 "3522fcd62b4ea1bb0d22650bf928cad29e56d71a35f39e0bf65ffa91f7e11032"
+
+      def install
+        bin.install "azbrowse"
+      end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/lawrencegripper/azbrowse/releases/download/v2.1.518/azbrowse_linux_amd64.tar.gz"
-      sha256 "914798279e629dea46d74f82c5b7c4c08f17e872c6e0834903f1692147ba655d"
-    end
-  end
+      url "https://github.com/lawrencegripper/azbrowse/releases/download/v2.1.524/azbrowse_linux_amd64.tar.gz"
+      sha256 "d13b5eefe03ee56350e42e957b0f9d047f31ab709abe71d97836d6348c204737"
 
-  def install
-    bin.install "azbrowse"
+      def install
+        bin.install "azbrowse"
+      end
+    end
   end
 
   test do
