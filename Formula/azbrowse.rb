@@ -5,23 +5,31 @@
 class Azbrowse < Formula
   desc "An interactive CLI for browsing Azure, inspired by http://resources.azure.com/"
   homepage "https://github.com/lawrencegripper/azbrowse"
-  version "2.1.561"
+  version "2.1.590"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/lawrencegripper/azbrowse/releases/download/v2.1.561/azbrowse_darwin_amd64.tar.gz"
-      sha256 "3bd8b5fdd81cad7ac31b22e96b8505e43cc4e8709315a3dbf3129ada83aa11ef"
+    url "https://github.com/lawrencegripper/azbrowse/releases/download/v2.1.590/azbrowse_darwin_amd64.tar.gz"
+    sha256 "6c3b1e9c6c51efacf904a1bfc71302c483af62f15a2a2375bc706687fde021f4"
 
-      def install
-        bin.install "azbrowse"
+    def install
+      bin.install "azbrowse"
+    end
+
+    if Hardware::CPU.arm?
+      def caveats
+        <<~EOS
+          The darwin_arm64 architecture is not supported for the Azbrowse
+          formula at this time. The darwin_amd64 binary may work in compatibility
+          mode, but it might not be fully supported.
+        EOS
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/lawrencegripper/azbrowse/releases/download/v2.1.561/azbrowse_linux_amd64.tar.gz"
-      sha256 "468071203bcfa56a55feb914396f530d7a7b2dc209cf1079aaff4700ca17a03a"
+      url "https://github.com/lawrencegripper/azbrowse/releases/download/v2.1.590/azbrowse_linux_amd64.tar.gz"
+      sha256 "74f1e664d32dd402596bc47c24fd4918a37efa8efd178e376ee6adbd316e3777"
 
       def install
         bin.install "azbrowse"
