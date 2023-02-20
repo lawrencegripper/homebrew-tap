@@ -5,11 +5,11 @@
 class Azbrowse < Formula
   desc "An interactive CLI for browsing Azure, inspired by http://resources.azure.com/"
   homepage "https://github.com/lawrencegripper/azbrowse"
-  version "2.1.673"
+  version "2.1.679"
 
   on_macos do
-    url "https://github.com/lawrencegripper/azbrowse/releases/download/v2.1.673/azbrowse_darwin_amd64.tar.gz"
-    sha256 "dd62909300e22f019928433392ceb5fcdaa37c58d49b7374aea2d11074ea6c83"
+    url "https://github.com/lawrencegripper/azbrowse/releases/download/v2.1.679/azbrowse_darwin_amd64.tar.gz"
+    sha256 "fb5e02398684b92cb9c8de64020f1e46d0846317b6d0aa818c414397bae10821"
 
     def install
       bin.install "azbrowse"
@@ -28,8 +28,8 @@ class Azbrowse < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/lawrencegripper/azbrowse/releases/download/v2.1.673/azbrowse_linux_amd64.tar.gz"
-      sha256 "4567b4d5d4500b39ca5aa733dbe665dd7fa08e5477c6c7ceaa27ad652894fa98"
+      url "https://github.com/lawrencegripper/azbrowse/releases/download/v2.1.679/azbrowse_linux_amd64.tar.gz"
+      sha256 "cefad3323d8ca6aff2097fef716c1a6ca876de673c37e12b199414c48ccdbafc"
 
       def install
         bin.install "azbrowse"
